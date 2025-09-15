@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 88
+
+[project]
+name = "iot-stream-engine"
+version = "1.0.0"
+description = "High-Performance IoT Ingestion Engine"
+authors = [
+    {name = "Xin Hu (Xenith Technologies LLC)", email = "careerxinhu@gmail.com"},
+]
+license = {text = "MIT"}
