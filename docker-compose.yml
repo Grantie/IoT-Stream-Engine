@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  iot-engine:
+    build: .
+    container_name: iot-ingestion-engine
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_db
+      - redis_cache
+      - kafka
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres_db:5432/iot_db
+      - REDIS_URL=redis://redis_cache:6379/0
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:29092
+    command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--no-access-log" ] # Add other necessary env vars from .env if needed, but these are the requested ones
+
+  iot-worker:
+    build: .
+    container_name: iot-worker
+    command: [ "python", "scripts/worker.py" ]
+    depends_on:
+      - postgres_db
+      - kafka
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres_db:5432/iot_db
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:29092
+
+  postgres_db:
+    image: postgres:13
+    container_name: iot-postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=iot_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis_cache:
+    image: redis:6.2-alpine
+    container_name: iot-redis
+    ports:
+      - "6379:6379"
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: iot-zookeeper
+    environment:
+      - ZOOKEEPER_CLIENT_PORT=2181
+      - ZOOKEEPER_TICK_TIME=2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: iot-kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
+      - KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1
+      - KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1
+      - KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1
+
+volumes:
+  postgres_data:
